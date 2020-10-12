@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Java Scripts</title>
+    <style>
+        #mouseover{
+            background-color: teal;
+            width: 600px;
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+            color: rgb(241, 208, 20);
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body onload="checkCookies()">
+<div class="container" id="main">
+    <h1 class="text-center">Finding HTML Elements</h1>
+    <h5>If the element is found, the method will return the element as an object (in myElement).
+    
+    If the element is not found, myElement will contain null.</h5>
+    <p id="by_id" class="inrto">Hello World!</p>
+    <p class="inrto">Hello World!</p>
+    <p id="result_by_id"></p>
+
+    <h5><p>This example demonstrates the <b>getElementsByTagName</b> method.</p></h5>
+    <p id="result_by_tag_name"></p>
+
+
+
+    <h5>This example finds the element with id="main", and then finds all <p> elements inside "main":</h5>
+    <p id="all_elements" class="inrto"> </p>
+
+
+
+
+    <h5>If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of
+    attributes, etc), use the querySelectorAll() method.</h5>
+    <p class="inrto"> hello class</p>
+    <p id="result_query_selector"></p>
+
+    <h1 class="text-center">JavaScript HTML DOM Events</h1>
+    <hr>
+    <b><p onclick='this.innerHTML ="It is changed now"'>Click thre to change this text</p></b>
+    <hr>
+
+
+
+    <h5><p>Click "Try it" to execute the displayDate() function.</p></h5>
+    <button id="mybtn">Try it</button>
+    <b><p id="date"></p></b><hr>
+
+    <h5>The onload and onunload Events</h5>
+    <b><p id="cookies"></p></b><hr>
+
+
+
+    <h5>onchange Events</h5>
+    <p>When you leave the input field, a function is
+         triggered which transforms the input text to upper case.</p>
+    <p>Enter your name: </p>
+    <input type="text" id="fname" onchange="changeFunction()">
+    <br><br><br><hr>
+
+
+
+
+    <h5>The onmouseover and onmouseout Events</h5>
+    <p>Mouse Over me to change the text </p>
+    <div id="mouseover" onmouseover="mOver(this)" onmouseout="mOut(this)">
+        Mouse Over Me
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <h1 class="text-center">JavaScript HTML DOM EventListener</h1>
+    <hr><h2>JavaScript addEventListener()</h2>
+    
+    <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+    
+    <button id="myBtn">Try it</button>
+    
+    <p id="demo2"></p>
+    <hr>
+
+
+    <h5>Add an Event Handler to an Element</h5>
+    <button id="myBtn1">Click me please</button>
+
+
+
+
+    <h1 class="text-center" id="child_node1">Child Nodes and Node Values</h1>
+    <p id="child_node2"></p>
+    <hr>
+
+
+
+    <h1 class="text-center">document.body - The body of the document</h1>
+
+
+    <h1 class="text-center">Creating New HTML Elements (Nodes)</h1>
+    <hr>
+    <div id="create_nodes">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+
+    <h2>Removing Existing HTML Elements</h2>
+    <p id="remove_p">Remove this paragraph by click the button</p>
+    <button onclick="removeFunction()">Remove</button>
+
+</div>
+
+    <script src="Dom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

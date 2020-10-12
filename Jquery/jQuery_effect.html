@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+
+        $("#hide").click(function(){
+            $("p").hide(1000);
+        });
+        $("#show").click(function(){
+            $("p").show();
+        })
+        $("#b_toggle").click(function(){
+            $("#toggle").toggle();
+        })
+        $("#f_button").click(function () {
+               $("#div1").fadeIn();
+               $("#div2").fadeIn("slow");
+               $("#div3").fadeIn(3000);
+           });
+        $("#f_o_button").click(function () {
+               $("#div4").fadeToggle();
+               $("#div5").fadeToggle("slow");
+               $("#div6").fadeToggle(3000);
+            });
+        $("#a_button").click(function(){
+            $("#animate").animate({left:'250px'});
+        });
+        $("#a_button1").click(function () {
+               $("#animate1").animate({
+                    left: '250px',
+                    opacity:'0.5',
+                    height:'+=200px',
+                    width:'+=250px',
+                    backgroung:'crimson'
+               });
+        });
+        $("#a_button2").click(function () {
+               var a = $("#animate2")
+               a.animate({height:'300px', backgroung: 'red'}, "slow");
+               a.animate({width:'300px', backgroung: '#777554'}, "slow");
+               a.animate({ height: '100px', backgroung: 'red'}, "slow");
+               a.animate({ width: '100px', backgroung: 'red'}, "slow");
+           });
+    });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Hide and Show Method</h1>
+        <p>Click the buttons to hide and show this paragraph!</p>
+        <button id="hide">Click to hide</button>
+        <button id="show">Chick to show</button>
+    </div> 
+    <div>
+        <h1>Toggle method</h1>
+        <p id="toggle">Click the button to show and hide this text</p>
+        <button id="b_toggle">Click here</button>
+    </div>  
+    <div>
+        <p>Demonstrate fadeIn() with different parameters.</p>
+        
+        <button id="f_button">Click to fade in boxes</button><br><br>
+        
+        <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+        <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+        <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+    </div> 
+    <div>
+        <p>Demonstrate fadeOut() with different parameters.</p>
+        
+        <button id="f_o_button">Click to fade Toggle boxes</button><br><br>
+        
+        <div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+        <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+        <div id="div6" style="width:80px;height:80px;background-color:blue;"></div>
+    </div>
+    <div>
+        <h1>jQuery Effects - Animation</h1>
+        <button id="a_button">Left</button>
+        <div id="animate" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+        
+    </div>
+    <div>
+        <br><br><br><br><br><br><br>
+        <button id="a_button1">Change</button>
+        <div id="animate1" style="background:burlywood;height: 100px;width: 100px;position: absolute;"></div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div>
+        <h4>Uses Queue Functionality</h4>
+        <button id="a_button2">Try it</button>
+        <div id="animate2" style="background:burlywood;height: 100px;width: 100px;position: absolute;"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+</body>
+</html>

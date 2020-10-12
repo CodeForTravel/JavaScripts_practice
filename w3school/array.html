@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Java Scripts</title>
+</head>
+
+<body>
+    <div class="container">
+<h1 class="text-center">JavaScript Arrays</h1><hr>
+<p id="first_array"></p>
+<h5>Access array with for loop</h5>
+<p id="for_loop"></p>
+<hr>
+
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array.forEach() calls a function for each array element.</p>
+
+<p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+
+<p id="foreach"></p><hr>
+
+<h2>JavaScript Array Methods</h2>
+
+
+
+<h5><p>The toString() method returns an array as a comma separated string:</p></h5>
+
+<p id="tostring"></p>
+<h5><p>The join() method also joins all array elements into a string.
+    It behaves just like toString(), but in addition you can specify the separator:
+</p></h5>
+<p id="join"></p>
+
+<h5>The pop() method removes the last element from an array:</h5>
+<p id="pop_method"></p>
+
+<h5>The pop() method returns the value that was "popped out":</h5>
+<p id="pop_out"></p>
+
+<h5>The push() method adds a new element to an array (at the end):</h5>
+<p id="push_method"></p>
+
+<h5>The push() method returns the new array length:</h5>
+<p id="push_output"></p>
+
+
+<h5>The shift() method removes the first array element and "shifts" all other elements to a lower index.</h5>
+<h5>The shift() method returns the string that was "shifted out":</h5>
+<p id="shift_method"></p>
+
+<h5>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:</h5>
+<p id="unshift_method"></p>
+
+
+
+<p>The splice() method adds new elements to an array.</p>
+
+<button onclick="mySpliceFunction()">Try it</button>
+
+<p id="splice1"></p>
+<p id="splice2"></p>
+<h5>The concat() method is used to merge (concatenate) arrays:</h5>
+<p id="concatenate"></p>
+<b>
+    <p>The concat() method does not change the existing arrays. It always returns a new array.
+        <br> The concat() method can take any number of array arguments:
+    </p>
+</b>
+<hr>
+
+
+
+<h2>Array Sorting</h2>
+
+<h5>The sort() method sorts an array alphabetically:</h5>
+<p id="sorting"></p>
+
+<h5>The reverse() method reverses the elements in an array.</h5>
+<p id="reverse"></p>
+
+<h5><p>Click the button to sort the array in ascending order.</p></h5>
+<button onclick="sortFunction()">Try it</button>
+<p id="sort"></p>
+<hr>
+
+
+<h5><p>Click the button (again and again) to sort the array in random order.</p></h5>
+<button class="btn btn-primary" onclick="randomSortFunction()">Try is</button>
+<p id="random_sort"></p>
+<hr>
+
+
+
+<h5>You can use Math.max.apply to find the highest number in an array:</h5>
+<p id="array_max"></p>
+<p id="array_min"></p>
+<hr>
+
+
+<h3>Sorting Object Arrays</h3>
+<button onclick="objectSortFunction()">sort</button>
+<p id="object_array"></p>
+
+
+
+
+<hr>
+<h2>JavaScript Array Iteration Methods</h2>
+<h5>
+    <p>JavaScript Array.forEach()</p>
+    <p>Calls a function once for each array element.</p>
+</h5>
+<p id="for_each"></p>
+
+
+<h4>JavaScript Array.map()</h4>
+<h6>The map() method creates a new array by performing a function on each array element.
+
+The map() method does not execute the function for array elements without values.
+
+The map() method does not change the original array.</h6>
+<p id="array_map"></p>
+
+
+    </div>
+
+    <script src="array.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

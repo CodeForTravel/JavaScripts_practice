@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            })
+            $("button").click(function(){
+                $("p").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <p>Click me to hide 1</p>
+        <p>Click me to hide 2</p>
+        
+    </div>
+    <p>Click me to hide!</p>
+    <p id="p4">Click the below button to hide all paragraph! </p>
+    <button>Click me</button>
+</body>
+</html>
